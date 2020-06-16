@@ -17,11 +17,3 @@ void selectionSort(T array[], int n)
 		swap(array[i], array[min_index]);
 	}
 }
-
-int main()
-{
-	
-
-	system("pause");
-	return 0;
-}
