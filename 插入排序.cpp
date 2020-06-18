@@ -5,13 +5,11 @@ void InsertionSort(T array[], int n)
 	{
 		T e = arr[i];
 		int j = 1;
-		for (int j = i; j>0; j--)
+		for (int j = i; j>0&&arrar[j]>array[j-1]; j--)
 		{
-			if (array[j-1] > e)
-			{
-				array[j] = array[j-1];
-			}
-			array[j] = e;
+			array[j] = array[j-1];
+			
 		}
+		array[j] = e;
 	}
 }
