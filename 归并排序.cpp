@@ -10,7 +10,7 @@ void __merge(T array[], int l, int r, int mid)
 	{
 		if (i > mid)
 		{
-			array[k] = aux[j - l]; j++;
+			array[k] = aux[j - l]; j++;//此处注意aux数组的下标
 		}
 		else if (j > r)
 		{
