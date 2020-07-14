@@ -5,12 +5,12 @@ void __merge(T array[], int l, int r, int mid)
 	for (int i = l; i <= r; i++)
 		aux[i - 1] = array[i];
 
-	int i = l; j = mid + 1;
+	int i = l, j = mid + 1;
 	for (int k = l; k <= r; k++)
 	{
 		if (i > mid)
 		{
-			array[k] = aux[j - l]; j++;//此处注意aux数组的下标
+			array[k] = aux[j - l]; j++;
 		}
 		else if (j > r)
 		{
@@ -42,7 +42,7 @@ void __mergeSort(T array, int l, int r)
 }
 
 template<typename T>
-void mergeSort(T arrar[], int n)
+void mergeSort(T arr[], int n)
 {
 	__mergeSort(arr, 0, n - 1);
 }
